@@ -28,3 +28,11 @@ composer require john-f-morton/craft-word-count-filter
 # tell Craft to install the plugin
 ./craft plugin/install word-count-filter
 ```
+
+## Usage
+
+Use the `wordCount` filter in your Twig templates to count the number of words in a string:
+
+```twig
+{{ entry.body | wordCount }}
+```
